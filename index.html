@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <button id="top">top</button>
+    <script src="./js/move.js"></script>
+    <script src="./js/scroll.js"></script>
+    <header>
+        <div class="inner">
+            <div>
+                <ul id="mainMenu">
+                    <li id="bt1"><a href=".gif">예고편</a></li>
+                    <li id="bt2"><a href="#product">명장면</a></li>
+                    <li id="bt3"><a href=".poster-wrap">포스터</a></li>
+                    <li id="bt4"><a href=".actress">출연</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="inner" id="window1"><iframe width="1500" height="900" src="https://www.youtube.com/embed/rcNTB6E38sI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></section>
+
+    <section class="inner" id="product">
+        <h2 class="center titleText">JS 시리즈</h2>
+        <p class="center article">JS에 고립된 20세기 대원들 과연 그들은 JS를 극복할 수 있을까..?</p>
+
+        <div id="imgSet"><img src="./img/111-1.png" alt="" id="img0"><img src="./img/222-2.png" alt="" id="img1"><img src="./img/333-3.png" alt="" id="img2"></div>
+
+        <dl id="textSet">
+            <dt id="dt0" class="active"></dt>
+            <dd id="dd0" class="whiteText active">
+                <p><span class="bigText">JS 조건문</span>때는 2023년 4월 24일 자바스크립스 수업이 시작되었다.. 시작과 동시 나는 길을 잃었다.</p>
+                <a href="#" id="btn0" class="button pointBg whiteText smallText active">영상 클립보기 0</a>
+            </dd>
+            <dt id="dt1"></dt>
+            <dd id="dd1" class="whiteText">
+                <p><span class="bigText">JS 반복문</span>조건문 이후 더한놈을 만났다. 결혼과 같이 벗어날 수 없는 굴래에 빠지게 만드는 너 "반복문"</p>
+                <a href="#" id="btn1" class="button pointBg whiteText smallText">영상 클립보기 </a>
+            </dd>
+            <dt id="dt2"></dt>
+            <dd id="dd2" class="whiteText">
+                <p><span class="bigText">JS 배열</span>그만하자..앞부분도 이해 못했다..</p>
+                <a href="#" id="btn2" class="button pointBg whiteText smallText">영상 클립보기 </a>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="inner" id="window3">
+        <div class="poster-wrap">
+            <img src="./img/poster.png" alt="poster" class="poster">
+            <h2>JS에서 살아남은 20세기 대원들</h2>
+            <p>
+                20세기 대원 이부장 전과장 도대원들은 인류를 구원하기위한 작전에 투입된다. <br>
+                사악한 JS함수를 만들고 있던 김교수는 인류들을 JS함수에 <br>
+                갇히게 하여 인류를 정복할 계획을 가지고있다. <br><br>
+                코딩 특공대 디지털미디어부대 프로그래밍 특공대원 <br>
+                3명이 인류를 구원하기 위해 김교수의 JS함수와 맞서 싸우러 나가지만 <br>
+                결국 김교수의 사악한 함수에 빠지게 된다. <br>
+                JS 함수를 탈출하고 살아서 인류를 구원하기 <br>
+                위한 프로그래밍 특공대원들의 여정은 계속 될것이다.
+            </p>
+        </div>
+    </section>
+
+    <section class="inner" id="window4">
+        <div class="actress">
+            <h2>출연</h2>
+            <ul>
+                <li><img src="./img/lee.png" alt=""></li>
+                <li><div class="box"></div></li>
+                <li><img src="./img/do.png" alt=""></li>
+            </ul>
+            <ul>
+                <li>이성우</li>
+                <li>전제욱</li>
+                <li>도희승</li>
+            </ul>
+        </div>
+    </section>
+    
+    <script src="./js/index.js"></script>
+    
+    <footer class="blackBg"></footer>
+
+    
+</body>
+</html>

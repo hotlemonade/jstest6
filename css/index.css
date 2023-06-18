@@ -1,0 +1,163 @@
+body, h2, dl, dt, dd, p, ul, li {margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    background-color: black;
+}
+
+header {z-index: 10;}
+
+header {background-color: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; width: 100%; transition: all 1s; height: 100px;}
+header.over {background-color: white;}
+header.over h1 a {background-position-y: -49px;}
+header.over #totalMenu {background-position-y: -50px;}
+header.over ul li a {color: black;}
+header.over #search {border: 1px solid #aaa; color: black;}
+header.over #search::after {background-position-y: -52px;}
+header.over .i-sns {background-position-y: -523px;}
+header.over .i-kor {background-position-y: -49px;}
+
+header div {height: 110px; display: flex; justify-content: space-between; align-items: center;}
+header ul {margin-top: -145px;}
+header h1 a {display: block; width: 160px; height: 50px;}
+header ul {display: flex; }
+header ul li {padding: 0 25px;}
+header ul li a {color: white;}
+header ul li a:hover {color: #f37321;}
+header ul li:first-child {padding-left: 0 !important;}
+header h1 {margin: -120px 0 20px 0; color: white;}
+header #totalMenu {margin: 0 50px; width: 50px; height: 24px; background-position-x: -650px;}
+header #totalMenu:hover {background-position-y: -25px;}
+header #topMenu button {margin: -120px 0 20px 0;}
+
+header .i-sns {background-position-x: -588px; background-position-y: -473px;}
+header .i-sns:hover {background-position-y: -498px;}
+header .i-kor {background-position-x: -273px;}
+header .i-kor:hover {background-position-y: -24px;}
+
+header #search {margin-right: 0; width: 140px; height: 40px; border: 1px solid white; color: white; text-align: left; border-radius: 20px; padding: 0 15px; position: relative;}
+header #search::after {content: ""; width: 20px; height: 20px; position: absolute; top: 10px; right: 15px; background-image: url("../images/ico.png"); background-position-x: -240px;}
+header #search:hover {background-color: #f37321; border-color: #f37321;}
+header.show {animation: headerShow 1s forwards; }
+header.hide {animation: headerHide 1s forwards; }
+        @keyframes headerShow {
+            from {height: 0px}
+            to {height: 80px;}
+        }
+        @keyframes headerHide {
+            from {height: 80px}
+            to {height: 0px;}
+        }
+
+iframe {
+    display: block;
+    margin: auto auto;
+}
+
+/* section {background-color: aquamarine; height:100vh;}
+section:nth-child(even) {background-color: bisque;} */
+footer {height: 200px;}
+h2::after {content: "."; color: red;}
+a {text-decoration: none; color: black;}
+button {border: none; background-color: transparent; cursor: pointer;}
+li {list-style: none;}
+
+.center {text-align: center;}
+.pointBg {background-color: black}
+.blackBg {background-color: black;}
+
+.whiteText {color: white;}
+
+.titleText {font-size: 30px;}
+.bigText {font-size: 20px;}
+.smallText {font-size: 14px;}
+
+.inner {width: 1440px; margin: 70px auto;}
+.arrow {position: absolute; top: -50px; right: 0; width: 31px; height: 31px; background-image: url("../images/ico.png");}
+.arrow.prev {right: 150px; background-position: -351px -205px;}
+.arrow.next {right: 50px; background-position: -269px -205px;}
+
+#product {overflow: hidden;}
+#product {height: 780px;}
+#product #imgSet {white-space: nowrap; height: 540px; margin-top: 40px; transition: transform 1s;}
+#product h2, p {color: rgb(0, 0, 0);}
+
+#product #textSet {position: relative; width: 1120px; left: 50%; margin-left: -560px;}
+#product #textSet::before {content: ""; background-color: white; width: 100%; height: 80px; position: absolute; }
+#product #textSet::after {content: ""; background-color: rgb(220, 220, 220); width: 100%; height: 140px; position: absolute; top: 0px;}
+
+#product #textSet dt {position: absolute; top: -50px; left: 50px;}
+#product #textSet dd>p {position: absolute; top: 0px; left: 0px; padding: 40px 270px 40px 220px;}
+#product #textSet dd>p>span {position: absolute; top: 40px; left: 40px; font-weight: bold;}
+
+#product #textSet dd .button {position: absolute; top: 27px; right: 50px; height: 45px; line-height: 45px; border-radius: 23px; padding: 0 20px; font-weight: bold; display: none;}
+#product #textSet dd .button:hover {background-color: black;}
+
+#product #textSet dt, #product #textSet dd>p {margin-top: 30px; opacity: 0;}
+#product #textSet dt.active, #product #textSet dd.active>p {animation: textMove 1s forwards;}
+#product #textSet dd .button.active {display: block;}
+@keyframes textMove {from {} to {margin-top: 0px; opacity: 1;}}
+
+#productList {position: absolute; top: 0; left: 0; top: -120px; left: 50%; margin-left: -45px; cursor: pointer;}
+#productList li {width: 10px; height: 10px; background-color: white; display: inline-block; margin: 0 10px; border-radius: 50%;}
+#productList li.active {background-color: orangered;}
+
+#product #textSet dt {z-index: 1; }
+#product #textSet dd>p {z-index: 2;}
+#product #textSet dd .button {z-index: 3;}
+
+#product .titleText{
+    color: white; font-size: 70px;
+}
+
+#product .article{
+    color: white;
+}
+
+.poster-wrap .poster{
+    display: block; margin: 100px auto; 
+}
+
+.poster-wrap h2{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 300px;
+}
+
+.poster-wrap p{
+    text-align: center;
+    color: #aaa;
+    font-size: 18px;
+    line-height: 170%;
+}
+
+.actress ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.actress ul .box{
+    border: 1px solid white;
+    width: 300px;
+    height: 300px;
+}
+    
+
+#top { position: fixed; bottom: 50px; right: 50px; color: white; font-size: 50px;}
+
+.actress h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 300px;
+}
+
+.actress{
+    color: white;
+    font-size: 30px;
+    
+}
+
+/* #product #productList {z-index: 4;} */
